@@ -1,0 +1,17 @@
+2.3.4 J2EE container
+A J2EE container is a server platform for running the J2EE application. An EJB container and Web container configure the J2EE container.
+
+A J2EE component runs on the J2EE container using the APIs provided by the Web container and EJB container. The Web container and EJB container provided by Application Server are compliant with Java EE 6. As a result, you can build a full-fledge key business application complying with Java EE quickly and easily. For details about the versions of each API, see 2.3.9 Server operation mode.
+
+Organization of this subsection
+(1) Web container-http://itdoc.hitachi.co.jp/manuals/3020/30203Y0410e/EY040017.HTM#ID00037
+(2) EJB container-http://itdoc.hitachi.co.jp/manuals/3020/30203Y0410e/EY040017.HTM#ID00038
+
+
+(1) Web container
+A Web container is a server platform used for executing servlets and JSPs. The Web container receives access from the Web client, and provides services according to a request.
+
+The Web container provides servlets and APIs for JSP.
+
+(2) EJB container
+An EJB container is a server platform used for controlling the execution of Enterprise Bean, and provides various services for Enterprise Bean. The EJB container provides APIs for EJB.
