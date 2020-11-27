@@ -1,0 +1,37 @@
+
+Types of J2EE Clients
+Depending upon the scope of infrastructure and design within the enterprise, J2EE services can be availed by a wide variety of client applications, some of which are listed below:
+
+Web (HTML) clients: Clients that access J2EE services through the Internet HTTP protocols.
+
+Device clients: Clients that access J2EE services through hand-held devices and mobile phones using J2ME, WAP, and/or other technologies.
+
+Applet clients: Java applet clients within the browser or applet container that can access directly to J2EE business logic environment.
+
+Stand-alone Java clients: Stand-alone Java application clients that also enjoy direct access to business logic components such as applets.
+
+EJB clients from other servers: Business logic components (normal classes as well as EJBs) from other J2EE-compatible servers and containers that can access the EJBs directly in a given J2EE environment.
+
+CORBA clients: CORBA (Common Object Request Broker Architecture) application clients that reside in CORBA ORB environments and access EJBs through remote IIOP calls.
+
+Legacy clients: Legacy systems such as ERP/CRM and mainframes that access resources and services within the J2EE environment.
+
+JMS clients: Clients that access J2EE services through enterprise messaging systems and JMS API.
+
+Windows clients: Windows application clients such as VB/VC ++.
+
+Web service clients: Clients that access J2EE resources through vendor-neutral Web service technologies such as SOAP/WSDL and UDDI.
+
+Clients from other environments: All other types of J2EE client access.
+
+Having seen different types of clients that access J2EE, let us see how J2EE components expose themselves to these clients.
+
+Servicing Web-based HTTP Clients
+Web-based clients are most popular with J2EE, and many J2EE projects begin as Web portals (during the initial stages) in any enterprise. We had earlier seen that HTTP Web servers are often bundled with J2EE Web application servers.
+
+Components that expose J2EE to Web/Internet via HTTP protocols include servlets and Java server pages. Although servlets are most suitable for accepting the client requests and invoking the required business logic, JSPs are most suitable for rendering the processed result(d)
+
+Servicing Java Applet Clients
+Java applets are much more powerful than normal HTML pages—they can go as far as invoking the business logic beans (EJBs directly). But it is generally not a good practice to make applets very heavy by embedding view and controller logic in it, unless there are specific reasons to do so. This is because as more and more codes are embedded into applets, we might as well be deviating from the basic Model-View-Controller architecture. It also takes more time on the client side to download and execute applet codes in the browser's virtual machine.
+
+It is better to do only client side validations inside the applets and push all other processing codes to the server side components.
